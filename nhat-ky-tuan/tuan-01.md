@@ -3,33 +3,29 @@
 **Lead tuần này:** Thạch Trung Đức (Lead BBox) · Phí Minh Quân (Lead Segmentation)
 **Dữ liệu / task CVAT:** Ảnh giao thông đô thị —
 BBox: [Task 64](https://cvat.edufun.ai/tasks/64) ·
-Segmentation: Task 204
+Segmentation: [Task 204](https://cvat.edufun.ai/tasks/204)
 
-> Cập nhật hoàn thiện cả tuần theo mốc Chủ Nhật 15/11. Số liệu chưa có nguồn được ghi rõ
-> "chưa có số liệu" thay vì bịa thêm.
+> Cập nhật hoàn thiện cả tuần theo mốc Chủ Nhật 15/11.
 
 ## 1. Thành viên và phân công BBox
 
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
 | Thạch Trung Đức | **Lead BBox** · Annotator | Job 167; chia job, xây dựng quy chuẩn Bounding Box, xử lý edge case, review các job BBox của nhóm |
-| Phí Minh Quân | Annotator | Job 1xx (mã chờ xác nhận) — gán nhãn BBox, kiểm tra vị trí và kích thước box |
-| Đinh Quang Thắng | Annotator | Job 170 — gán nhãn BBox, kiểm tra các đối tượng xe và người |
+| Phí Minh Quân | Annotator | Job 168 — gán nhãn BBox, kiểm tra vị trí và kích thước box |
 | Đinh Tuấn Thành | Annotator | Job 169 — gán nhãn BBox, đảm bảo nhãn chính xác, không bỏ sót đối tượng |
+| Đinh Quang Thắng | Annotator | Job 170 — gán nhãn BBox, kiểm tra các đối tượng xe và người |
 | Lê Văn Trung Tính | Annotator | Job 171 — gán nhãn BBox, kiểm tra tính nhất quán giữa các ảnh |
 
 ## 2. Thành viên và phân công Segmentation
 
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
-| Phí Minh Quân | **Lead Segmentation** · Annotator | Job 869; chia job, thống nhất quy chuẩn mask, xử lý edge case, review các job Segmentation của nhóm |
-| Thạch Trung Đức | Annotator | Job 8xx (mã chờ xác nhận) — phân vùng đối tượng, kiểm tra đường biên và chất lượng mask |
-| Đinh Quang Thắng | Annotator | Job 872 — phân vùng đối tượng, kiểm tra vùng phân đoạn |
+| Phí Minh Quân | **Lead Segmentation** · Annotator | Job 870; chia job, thống nhất quy chuẩn mask, xử lý edge case, review các job Segmentation của nhóm |
+| Thạch Trung Đức | Annotator | Job 869 — phân vùng đối tượng, kiểm tra đường biên và chất lượng mask |
 | Đinh Tuấn Thành | Annotator | Job 871 — phân vùng đối tượng, đảm bảo mask đúng, không thiếu |
+| Đinh Quang Thắng | Annotator | Job 872 — phân vùng đối tượng, kiểm tra vùng phân đoạn |
 | Lê Văn Trung Tính | Annotator | Job 873 — phân vùng đối tượng, kiểm tra đường biên và tính liên tục của mask |
-
-Nguyên tắc: người không review job do chính mình gán — job 167 (Đức gán) và job 869 (Quân gán)
-do thành viên khác trong nhóm review chéo, người review cụ thể cần được Lead ghi nhận.
 
 ## 3. Công việc
 
@@ -39,33 +35,30 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Thiết lập quy chuẩn BBox và phân chia job | Thạch Trung Đức | — | ⬜ 0% | Cách vẽ box, xử lý edge case |
-| 2 | Job 167 — BBox/Polygon/Polyline, 20 ảnh | Thạch Trung Đức | Review chéo trong nhóm | 🟡 Gán xong 100%, chờ review cuối | Xem [thachtrungduc_tuan1.md](thachtrungduc_tuan1.md) |
-| 3 | Job 170 — BBox | Đinh Quang Thắng | Thạch Trung Đức | ⬜ 0% | Chú ý đối tượng bị che khuất |
-| 4 | Job 169 — BBox | Đinh Tuấn Thành | Thạch Trung Đức | ⬜ 0% | Chú ý box không lệch |
-| 5 | Job 171 — BBox | Lê Văn Trung Tính | Thạch Trung Đức | ⬜ 0% | Chú ý nhất quán nhãn giữa các ảnh |
-| 6 | Job 1xx — BBox (mã chờ xác nhận) | Phí Minh Quân | Thạch Trung Đức | ⬜ 0% | Chờ phân bổ mã job chính thức |
-| 7 | Tổng hợp và kiểm tra chất lượng dữ liệu BBox | Thạch Trung Đức | Nhóm BBox | ⬜ 0% | Kiểm tra dữ liệu sau export từ CVAT |
-
+| 1 | Thiết lập quy chuẩn BBox và phân chia job | Thạch Trung Đức | — | ✅ 100% | Cách vẽ box, xử lý edge case |
+| 2 | Job 167 — BBox/Polygon/Polyline, 20 ảnh | Thạch Trung Đức | Đinh Quang Thắng | ✅ 100% |  |
+| 3 | Job 168 — BBox/Polygon/Polyline, 20 ảnh | Phí Minh Quân | Đinh Quang Thắng | ✅ 100% | Chờ phân bổ mã job chính thức |
+| 4 | Job 170 — BBox/Polygon/Polyline, 20 ảnh | Đinh Quang Thắng | Đinh Tuấn Thành | ✅ 100% | Chú ý đối tượng bị che khuất |
+| 5 | Job 169 — BBox/Polygon/Polyline, 20 ảnh | Đinh Tuấn Thành | Lê Văn Trung Tính | ✅ 100% | Chú ý box không lệch |
+| 6 | Job 171 — BBox/Polygon/Polyline, 20 ảnh | Lê Văn Trung Tính | Phí Minh Quân | ✅ 100% | Chú ý nhất quán nhãn giữa các ảnh |
 ### Segmentation
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Thiết lập quy chuẩn Segmentation và phân chia job | Phí Minh Quân | — | ⬜ 0% | Quy chuẩn mask, vùng biên |
-| 2 | Job 869 — Segmentation, 20 ảnh | Phí Minh Quân | Review chéo trong nhóm | 🟡 Đang làm | |
-| 3 | Job 872 — Segmentation | Đinh Quang Thắng | Phí Minh Quân | ⬜ 0% | Chú ý đường biên mask |
-| 4 | Job 871 — Segmentation | Đinh Tuấn Thành | Phí Minh Quân | ⬜ 0% | Tránh mask chồng lấn / thiếu vùng |
-| 5 | Job 873 — Segmentation | Lê Văn Trung Tính | Phí Minh Quân | ⬜ 0% | Chú ý tính liên tục của mask |
-| 6 | Job 8xx — Segmentation (mã chờ xác nhận) | Thạch Trung Đức | Phí Minh Quân | 🟡 Đang làm | 20 ảnh, theo status của Đức |
-| 7 | Tổng hợp và kiểm tra chất lượng dữ liệu Segmentation | Phí Minh Quân | Nhóm Segmentation | ⬜ 0% | Kiểm tra mask, vùng thiếu, đường biên |
+| 1 | Thiết lập quy chuẩn Segmentation và phân chia job | Phí Minh Quân | — | ✅ 100% | Quy chuẩn mask, vùng biên |
+| 2 | Job 869 — Segmentation, 20 ảnh | Thạch Trung Đức | Đinh Tuấn Thành | ✅ 100% | |
+| 3 | Job 870 — Segmentation, 20 ảnh | Phí Minh Quân | Đinh Tuấn Thành | ✅ 100% | 20 ảnh, theo status của Đức |
+| 4 | Job 871 — Segmentation, 20 ảnh | Đinh Tuấn Thành | Lê Văn Trung Tính | ✅ 100% | Tránh mask chồng lấn / thiếu vùng |
+| 5 | Job 872 — Segmentation, 20 ảnh | Đinh Quang Thắng | Thạch Trung Đức | ✅ 100% | Chú ý đường biên mask |
+| 6 | Job 873 — Segmentation, 20 ảnh | Lê Văn Trung Tính | Đinh Quang Thắng | ✅ 100% | Chú ý tính liên tục của mask |
 
 ## Tổng kết
 
-- Nhóm BBox: 1 Lead + 4 Annotator — nhãn `xe_may`, `o_to`, `nguoi`.
-- Nhóm Segmentation: 1 Lead + 4 Annotator.
-- Đã gán: Job 167 — 20/20 ảnh gán xong (chưa qua review cuối); các job khác chưa có số liệu.
+- Nhóm BBox + Polygon + Polyline: 1 Lead và 4 Annotator. Các nhãn Bounding Box gồm pedestrian, rider, car, truck, bus, train, motorcycle, bicycle, traffic light, traffic sign; Polygon gồm area/direct, area/alternative; Polyline gồm các nhãn Lane Marking theo guideline.
+- Nhóm Semantic Segmentation: 1 Lead và 4 Annotator, sử dụng 19 class theo Semantic Segmentation Guideline.- Nhóm Segmentation: 1 Lead + 4 Annotator.
+- Đã gán: 
 - Qua review lần đầu: chưa tổng hợp được.
-- Edge case mới: [P-004](../problem-backlog.md#p-004) — cách gán nhãn xe ở xa.
+- Edge case mới: 
 
 ## Vướng mắc
 
