@@ -36,11 +36,11 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
 | 1 | Thiết lập quy chuẩn BBox và phân chia job | Thạch Trung Đức | — | ✅ 100% | Cách vẽ box, xử lý edge case |
-| 2 | Job 167 — BBox/Polygon/Polyline, 20 ảnh | Thạch Trung Đức | Đinh Quang Thắng | ✅ 100% |  |
+| 2 | Job 167 — BBox/Polygon/Polyline, 20 ảnh | Thạch Trung Đức | Đinh Quang Thắng | ✅ 100% | Đã sửa các lỗi đánh box và chỉnh sửa đối tượng |
 | 3 | Job 168 — BBox/Polygon/Polyline, 20 ảnh | Phí Minh Quân | Đinh Quang Thắng | ✅ 100% | Chờ phân bổ mã job chính thức |
 | 4 | Job 170 — BBox/Polygon/Polyline, 20 ảnh | Đinh Quang Thắng | Đinh Tuấn Thành | ✅ 100% | Chú ý đối tượng bị che khuất |
-| 5 | Job 169 — BBox/Polygon/Polyline, 20 ảnh | Đinh Tuấn Thành | Lê Văn Trung Tính | ✅ 100% | Chú ý box không lệch |
-| 6 | Job 171 — BBox/Polygon/Polyline, 20 ảnh | Lê Văn Trung Tính | Phí Minh Quân | ✅ 100% | Chú ý nhất quán nhãn giữa các ảnh |
+| 5 | Job 169 — BBox/Polygon/Polyline, 20 ảnh | Đinh Tuấn Thành | Lê Văn Trung Tính | ✅ 100% | Đã sửa các lỗi đánh box và chỉnh sửa đối tượng |
+| 6 | Job 171 — BBox/Polygon/Polyline, 20 ảnh | Lê Văn Trung Tính | Phí Minh Quân | ✅ 100% | Đã sửa các lỗi đánh box và chỉnh sửa đối tượng |
 ### Segmentation
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
