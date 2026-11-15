@@ -56,16 +56,16 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 - Nhóm BBox + Polygon + Polyline: 1 Lead và 4 Annotator. Các nhãn Bounding Box gồm pedestrian, rider, car, truck, bus, train, motorcycle, bicycle, traffic light, traffic sign; Polygon gồm area/direct, area/alternative; Polyline gồm các nhãn Lane Marking theo guideline.
 - Nhóm Semantic Segmentation: 1 Lead và 4 Annotator, sử dụng 19 class theo Semantic Segmentation Guideline.- Nhóm Segmentation: 1 Lead + 4 Annotator.
-- Đã gán: 
-- Qua review lần đầu: chưa tổng hợp được.
+- Đã gán: Hoàn thành 
+- Qua review lần đầu: Bbox còn đánh khá lỗi .
 - Edge case mới: 
 
 ## Vướng mắc
-
+- Không có - cố gắng khắc phục về sau.
 
 
 ## Kế hoạch tuần 02
-
+- Team đã hiểu cách chia việc - tuần 2 sẽ chia việc cụ thể hơn cố gắng hoàn thành job sớm.
 
 
 
