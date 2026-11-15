@@ -1,21 +1,18 @@
-# Nhật ký tuần 01 · dd/mm – dd/mm/yyyy
+# Nhật ký tuần 01 · 15/11 – 15/11/2026
 
-> **File ví dụ** — tên, số liệu và link đều là giả. Tuần mới thì copy
-> [`_mau-tuan.md`](_mau-tuan.md) thành `tuan-02.md`.
 
-**Lead tuần này:** @thanh-vien-a
-**Dữ liệu / task CVAT:** Ảnh giao thông đô thị — [task 12](https://cvat.example.com/tasks/12)
+**Lead tuần này:** @thachduc123 và @minhquanphi04-AIVinUni
+**Dữ liệu / task CVAT:** Ảnh giao thông đô thị — [task 64]([https://cvat.edufun.ai/tasks/64]) - [task 204]([https://cvat.edufun.ai/tasks/204])
 
-## Thành viên và phân công
+## Thành viên và phân côn
 
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
-| Nguyễn Văn A (@thanh-vien-a) | Lead | Chia job, chốt edge case, review xác suất 10% mọi job |
-| Trần Thị B (@thanh-vien-b) | Annotator | Job 101, 102 |
-| Lê Văn C (@thanh-vien-c) | Annotator | Job 103, 104 |
-| Phạm Thị D (@thanh-vien-d) | Reviewer · Annotator | Review job 101–104; gán job 105 |
-
-Phạm Thị D vừa review vừa gán, nên job 105 do Lead review.
+| Thạch Trung Đức | Lead BBox | Chia job, chốt edge case, review - Job 167 - 869 |
+| PHÍ MINH QUÂN | Lead Segmentaion | Chia job, chốt edge case, review  - Job 167 - 869 |
+| ĐINH QUANG THẮNG | Annotator | Job 170, 872 |
+| ĐINH TUẤN THÀNH | Annotator | Job 169, 871 |
+| LÊ VĂN TRUNG TÍNH | Annotator | Job 171 - 873 |
 
 ## Công việc
 
