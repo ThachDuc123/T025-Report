@@ -61,8 +61,7 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 - Edge case mới: 
 
 ## Vướng mắc
-- Không có - cố gắng khắc phục về sau.
-
+- Không có - cố gắng khắc phục về sau nhất là Segmentation làm thống nhất hơn và Bbox cần gán nhãn chuẩn hơn
 
 ## Kế hoạch tuần 02
 - Team đã hiểu cách chia việc - tuần 2 sẽ chia việc cụ thể hơn cố gắng hoàn thành job sớm.
