@@ -12,10 +12,10 @@ Segmentation: [Task 204](https://cvat.edufun.ai/tasks/204)
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
 | Thạch Trung Đức | **Lead BBox** · Annotator | Job 167; chia job, xây dựng quy chuẩn Bounding Box, xử lý edge case, review các job BBox của nhóm |
-| Phí Minh Quân | Annotator | Job 168 — gán nhãn BBox, kiểm tra vị trí và kích thước box |
-| Đinh Tuấn Thành | Annotator | Job 169 — gán nhãn BBox, đảm bảo nhãn chính xác, không bỏ sót đối tượng |
-| Đinh Quang Thắng | Annotator | Job 170 — gán nhãn BBox, kiểm tra các đối tượng xe và người |
-| Lê Văn Trung Tính | Annotator | Job 171 — gán nhãn BBox, kiểm tra tính nhất quán giữa các ảnh |
+| Phí Minh Quân | Annotator | Job 168 — gán nhãn BBox |
+| Đinh Tuấn Thành | Annotator | Job 169 — gán nhãn BBox |
+| Đinh Quang Thắng | Annotator | Job 170 — gán nhãn BBox |
+| Lê Văn Trung Tính | Annotator | Job 171 — gán nhãn BBox |
 
 ## 2. Thành viên và phân công Segmentation
 
