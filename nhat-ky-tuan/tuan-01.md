@@ -1,47 +1,79 @@
-# Nhật ký tuần 01 · 15/11 – 15/11/2026
+# Nhật ký tuần 01 · 09/11 – 15/11/2026
 
+**Lead tuần này:** Thạch Trung Đức (Lead BBox) · Phí Minh Quân (Lead Segmentation)
+**Dữ liệu / task CVAT:** Ảnh giao thông đô thị —
+BBox: [Task 64](https://cvat.edufun.ai/tasks/64) ·
+Segmentation: Task 204
 
-**Lead tuần này:** @thachduc123 và @minhquanphi04-AIVinUni
-**Dữ liệu / task CVAT:** Ảnh giao thông đô thị — [task 64]([https://cvat.edufun.ai/tasks/64]) - [task 204]([https://cvat.edufun.ai/tasks/204])
+> Cập nhật hoàn thiện cả tuần theo mốc Chủ Nhật 15/11. Số liệu chưa có nguồn được ghi rõ
+> "chưa có số liệu" thay vì bịa thêm.
 
-## Thành viên và phân côn
+## 1. Thành viên và phân công BBox
 
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
-| Thạch Trung Đức | Lead BBox | Chia job, chốt edge case, review - Job 167 - 869 |
-| PHÍ MINH QUÂN | Lead Segmentaion | Chia job, chốt edge case, review  - Job 167 - 869 |
-| ĐINH QUANG THẮNG | Annotator | Job 170, 872 |
-| ĐINH TUẤN THÀNH | Annotator | Job 169, 871 |
-| LÊ VĂN TRUNG TÍNH | Annotator | Job 171 - 873 |
+| Thạch Trung Đức | **Lead BBox** · Annotator | Job 167; chia job, xây dựng quy chuẩn Bounding Box, xử lý edge case, review các job BBox của nhóm |
+| Phí Minh Quân | Annotator | Job 1xx (mã chờ xác nhận) — gán nhãn BBox, kiểm tra vị trí và kích thước box |
+| Đinh Quang Thắng | Annotator | Job 170 — gán nhãn BBox, kiểm tra các đối tượng xe và người |
+| Đinh Tuấn Thành | Annotator | Job 169 — gán nhãn BBox, đảm bảo nhãn chính xác, không bỏ sót đối tượng |
+| Lê Văn Trung Tính | Annotator | Job 171 — gán nhãn BBox, kiểm tra tính nhất quán giữa các ảnh |
 
-## Công việc
+## 2. Thành viên và phân công Segmentation
 
-| # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
-|---|---|---|---|---|---|
-| 1 | Job 101 — 250 ảnh, bbox `xe_may` / `o_to` / `nguoi` | @thanh-vien-b | @thanh-vien-d | ✅ 100% | Review trả lại 12 ảnh, đã sửa xong |
-| 2 | Job 102 — 250 ảnh, cùng nhãn | @thanh-vien-b | @thanh-vien-d | 🟡 70% |  |
-| 3 | Job 103 — 250 ảnh, cùng nhãn | @thanh-vien-c | @thanh-vien-d | ⛔ 30% | Dừng, chờ chốt [P-002](../problem-backlog.md#p-002) |
-| 4 | Job 104 — 250 ảnh, cùng nhãn | @thanh-vien-c | @thanh-vien-d | ⬜ 0% | Làm sau job 103 |
-| 5 | Job 105 — 250 ảnh, cùng nhãn | @thanh-vien-d | @thanh-vien-a | 🟡 40% |  |
-| 6 | Đọc lại guideline §3, gom các ca chưa rõ | @thanh-vien-a | — | ✅ 100% | Ra P-001, P-002 |
-| 7 | Rà lại job 101 theo QĐ-001 | @thanh-vien-b | @thanh-vien-d | ✅ 100% | Sửa 37 ảnh người ngồi sau |
+| Thành viên | Vị trí | Phân công tuần này |
+|---|---|---|
+| Phí Minh Quân | **Lead Segmentation** · Annotator | Job 869; chia job, thống nhất quy chuẩn mask, xử lý edge case, review các job Segmentation của nhóm |
+| Thạch Trung Đức | Annotator | Job 8xx (mã chờ xác nhận) — phân vùng đối tượng, kiểm tra đường biên và chất lượng mask |
+| Đinh Quang Thắng | Annotator | Job 872 — phân vùng đối tượng, kiểm tra vùng phân đoạn |
+| Đinh Tuấn Thành | Annotator | Job 871 — phân vùng đối tượng, đảm bảo mask đúng, không thiếu |
+| Lê Văn Trung Tính | Annotator | Job 873 — phân vùng đối tượng, kiểm tra đường biên và tính liên tục của mask |
+
+Nguyên tắc: người không review job do chính mình gán — job 167 (Đức gán) và job 869 (Quân gán)
+do thành viên khác trong nhóm review chéo, người review cụ thể cần được Lead ghi nhận.
+
+## 3. Công việc
 
 Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) · ⛔ bị chặn (ghi lý do) · ⬜ chưa bắt đầu
 
+### BBox
+
+| # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
+|---|---|---|---|---|---|
+| 1 | Thiết lập quy chuẩn BBox và phân chia job | Thạch Trung Đức | — | ⬜ 0% | Cách vẽ box, xử lý edge case |
+| 2 | Job 167 — BBox/Polygon/Polyline, 20 ảnh | Thạch Trung Đức | Review chéo trong nhóm | 🟡 Gán xong 100%, chờ review cuối | Xem [thachtrungduc_tuan1.md](thachtrungduc_tuan1.md) |
+| 3 | Job 170 — BBox | Đinh Quang Thắng | Thạch Trung Đức | ⬜ 0% | Chú ý đối tượng bị che khuất |
+| 4 | Job 169 — BBox | Đinh Tuấn Thành | Thạch Trung Đức | ⬜ 0% | Chú ý box không lệch |
+| 5 | Job 171 — BBox | Lê Văn Trung Tính | Thạch Trung Đức | ⬜ 0% | Chú ý nhất quán nhãn giữa các ảnh |
+| 6 | Job 1xx — BBox (mã chờ xác nhận) | Phí Minh Quân | Thạch Trung Đức | ⬜ 0% | Chờ phân bổ mã job chính thức |
+| 7 | Tổng hợp và kiểm tra chất lượng dữ liệu BBox | Thạch Trung Đức | Nhóm BBox | ⬜ 0% | Kiểm tra dữ liệu sau export từ CVAT |
+
+### Segmentation
+
+| # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
+|---|---|---|---|---|---|
+| 1 | Thiết lập quy chuẩn Segmentation và phân chia job | Phí Minh Quân | — | ⬜ 0% | Quy chuẩn mask, vùng biên |
+| 2 | Job 869 — Segmentation, 20 ảnh | Phí Minh Quân | Review chéo trong nhóm | 🟡 Đang làm | |
+| 3 | Job 872 — Segmentation | Đinh Quang Thắng | Phí Minh Quân | ⬜ 0% | Chú ý đường biên mask |
+| 4 | Job 871 — Segmentation | Đinh Tuấn Thành | Phí Minh Quân | ⬜ 0% | Tránh mask chồng lấn / thiếu vùng |
+| 5 | Job 873 — Segmentation | Lê Văn Trung Tính | Phí Minh Quân | ⬜ 0% | Chú ý tính liên tục của mask |
+| 6 | Job 8xx — Segmentation (mã chờ xác nhận) | Thạch Trung Đức | Phí Minh Quân | 🟡 Đang làm | 20 ảnh, theo status của Đức |
+| 7 | Tổng hợp và kiểm tra chất lượng dữ liệu Segmentation | Phí Minh Quân | Nhóm Segmentation | ⬜ 0% | Kiểm tra mask, vùng thiếu, đường biên |
+
 ## Tổng kết
 
-- Đã gán: 425 / 1.250 ảnh (34%)
-- Qua review lần đầu: 88% (trả lại 51 ảnh)
-- Edge case mới: P-001, P-002, P-003 — đã chốt P-001 thành [QĐ-001](../so-quyet-dinh.md#qđ-001)
+- Nhóm BBox: 1 Lead + 4 Annotator — nhãn `xe_may`, `o_to`, `nguoi`.
+- Nhóm Segmentation: 1 Lead + 4 Annotator.
+- Đã gán: Job 167 — 20/20 ảnh gán xong (chưa qua review cuối); các job khác chưa có số liệu.
+- Qua review lần đầu: chưa tổng hợp được.
+- Edge case mới: [P-004](../problem-backlog.md#p-004) — cách gán nhãn xe ở xa.
 
 ## Vướng mắc
 
-- P-002 (xe bị che khuất) chưa chốt nên job 103 phải dừng. Lead đã gửi câu hỏi lên BTC.
-- P-003: vẽ lại box y hệt qua các frame liên tiếp mất ~40% thời gian job 105.
-  Đang cân nhắc làm tool trong [`source-tool/`](../source-tool/).
+
 
 ## Kế hoạch tuần 02
 
-- Chốt P-002, mở lại job 103.
-- Xong job 102, 104, 105.
-- Quyết định có làm tool cho P-003 hay dùng chế độ Track sẵn có của CVAT.
+
+
+
+
